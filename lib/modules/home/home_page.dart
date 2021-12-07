@@ -13,8 +13,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final controller = HomeController();
   final pages = [
-    Container(color: Colors.red,),
-    Container(color: Colors.blue,),
+    Container(
+      color: Colors.red,
+    ),
+    Container(
+      color: Colors.blue,
+    ),
   ];
 
   @override
@@ -37,7 +41,10 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyles.captionBoldBackground),
                     ]),
               ),
-              subtitle: Text("Mantenha suas contas em dia"),
+              subtitle: Text(
+                "Mantenha suas contas em dia",
+                style: TextStyles.captionShape,
+              ),
               trailing: Container(
                 height: 48,
                 width: 48,
@@ -59,9 +66,7 @@ class _HomePageState extends State<HomePage> {
             IconButton(
               onPressed: () {
                 controller.setPage(0);
-                setState(() {
-                  
-                });
+                setState(() {});
               },
               icon: Icon(
                 Icons.home,
@@ -69,8 +74,8 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             GestureDetector(
-              onTap:() {
-               Navigator.pushNamed(context, "/barcode_scanner");
+              onTap: () {
+                Navigator.pushNamed(context, "/barcode_scanner");
               },
               child: Container(
                 width: 56,
@@ -87,12 +92,10 @@ class _HomePageState extends State<HomePage> {
             IconButton(
               onPressed: () {
                 controller.setPage(1);
-                setState(() {
-                  
-                });
+                setState(() {});
               },
-              icon: Icon(Icons.description_outlined,
-
+              icon: Icon(
+                Icons.description_outlined,
               ),
             ),
           ],
