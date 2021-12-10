@@ -45,6 +45,7 @@ dependencies:
   flutter_plugin_android_lifecycle: ^2.0.5
   font_awesome_flutter: ^9.2.0
   flutter_masked_text2: ^0.9.1
+  animated_card: ^2.0.0
   # camera_web: ^0.2.1+1
   
   
